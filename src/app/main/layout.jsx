@@ -1,11 +1,18 @@
-import React from 'react';
+import NavbarMain from "../components/shared/Navbar-main";
 
-const layoutMain = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
 
-export default layoutMain;
+export default function MainLayout({ children }) {
+  return (
+    <div className="min-h-scree">
+
+      {/* Navbar top */}
+      <NavbarMain />
+
+      {/* Center content */}
+      <div className="flex items-center justify-center min-h-[calc(100vh-64px)]">
+        {children}
+      </div>
+
+    </div>
+  );
+}
