@@ -30,25 +30,25 @@ export default function NavbarMain() {
           <div className="flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 backdrop-blur-md shadow-lg">
 
             <Link
-              href="/tiles"
+              href="/main/tiles"
               className="px-3 py-1 rounded-full text-sm text-gray-200 hover:bg-orange-500 hover:text-white transition"
             >
               Tiles
             </Link>
 
             <Link
-              href="/profile"
+              href="/main/profile"
               className="px-3 py-1 rounded-full text-sm text-gray-200 hover:bg-orange-500 hover:text-white transition"
             >
               Profile
             </Link>
 
-            <button
-              onClick={handleLogout}
-              className="px-3 py-1 rounded-full text-sm text-gray-200 hover:bg-red-500 hover:text-white transition"
+            <Link
+              href="/"
+              className="px-3 py-1 rounded-full text-sm text-gray-200 hover:bg-orange-500 hover:text-white transition"
             >
               Logout
-            </button>
+            </Link>
 
           </div>
 
