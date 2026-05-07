@@ -1,0 +1,717 @@
+{
+  "tiles": [
+    {
+      "id": 1,
+      "name": "Ceramic Tile",
+      "slug": "ceramic-tile",
+      "category": "Floor & Wall",
+      "origin": "Clay-based",
+      "image": "https://xceramics.com/wp-content/uploads/2021/12/XOD-350-300x300.png",
+      "description": "Ceramic tiles are জনপ্রিয় ও সাশ্রয়ী টাইলস যা মাটি (clay) থেকে তৈরি করা হয় এবং সাধারণত দেয়াল ও মেঝেতে ব্যবহৃত হয়।",
+      
+      "technical_specs": {
+        "water_absorption": "3% - 10%",
+        "thickness_mm": [6, 8, 10],
+        "weight_per_box_kg": 18,
+        "pcs_per_box": 4,
+        "coverage_per_box_sqft": 16
+      },
+
+      "features": [
+        "Lightweight",
+        "Easy installation",
+        "Budget friendly",
+        "Wide design variety"
+      ],
+
+      "advantages": [
+        "কম খরচ",
+        "সহজে পরিষ্কার করা যায়",
+        "ইনডোরে ভালো পারফরম্যান্স"
+      ],
+
+      "disadvantages": [
+        "High impact এ ভেঙে যেতে পারে",
+        "Outdoor এর জন্য কম উপযুক্ত"
+      ],
+
+      "available_sizes": [
+        { "label": "12x12 inch", "cm": "30x30" },
+        { "label": "16x16 inch", "cm": "40x40" },
+        { "label": "24x24 inch", "cm": "60x60" }
+      ],
+
+      "surface_finish": ["Matte", "Glossy", "Textured"],
+
+      "color_options": [
+        "White",
+        "Beige",
+        "Gray",
+        "Patterned",
+        "Wood Finish"
+      ],
+
+      "applications": [
+        "Living Room",
+        "Bedroom",
+        "Kitchen Wall",
+        "Bathroom Wall"
+      ],
+
+      "performance": {
+        "durability": "Medium",
+        "scratch_resistance": "Medium",
+        "slip_resistance_rating": "R9 - R10",
+        "stain_resistance": "Good"
+      },
+
+      "maintenance": {
+        "cleaning_method": "Water + mild detergent",
+        "maintenance_level": "Low"
+      },
+
+      "price": {
+        "currency": "BDT",
+        "min_per_sqft": 60,
+        "max_per_sqft": 150
+      },
+
+      "rating": 4.2,
+      "brand_examples": ["RAK Ceramics", "DBL Ceramics", "Fu-Wang"]
+    },
+
+    {
+      "id": 2,
+      "name": "Porcelain Tile",
+      "slug": "porcelain-tile",
+      "category": "Floor",
+      "origin": "Refined clay, high temperature",
+       "image": "https://xceramics.com/wp-content/uploads/2021/12/XOD-351-300x300.png",
+      "description": "Porcelain tiles বেশি শক্ত, ঘন এবং কম পানি শোষণ করে—heavy use এর জন্য উপযুক্ত।",
+
+      "technical_specs": {
+        "water_absorption": "< 0.5%",
+        "thickness_mm": [8, 10, 12],
+        "weight_per_box_kg": 22,
+        "pcs_per_box": 2,
+        "coverage_per_box_sqft": 15
+      },
+
+      "features": [
+        "Highly durable",
+        "Waterproof",
+        "Scratch resistant",
+        "Suitable for heavy traffic"
+      ],
+
+      "advantages": [
+        "দীর্ঘস্থায়ী",
+        "Outdoor use এর জন্য ভালো",
+        "কম maintenance লাগে"
+      ],
+
+      "disadvantages": [
+        "দাম বেশি",
+        "কাটতে কষ্টকর"
+      ],
+
+      "available_sizes": [
+        { "label": "24x24 inch", "cm": "60x60" },
+        { "label": "32x32 inch", "cm": "80x80" },
+        { "label": "60x60 cm", "cm": "60x60" }
+      ],
+
+      "surface_finish": ["Polished", "Matte", "Full Body"],
+
+      "color_options": [
+        "Marble Look",
+        "Stone Look",
+        "Concrete Finish",
+        "Black",
+        "White"
+      ],
+
+      "applications": [
+        "Commercial Floor",
+        "Outdoor Area",
+        "Parking Area",
+        "Shopping Mall"
+      ],
+
+      "performance": {
+        "durability": "High",
+        "scratch_resistance": "High",
+        "slip_resistance_rating": "R10 - R11",
+        "stain_resistance": "Excellent"
+      },
+
+      "maintenance": {
+        "cleaning_method": "Water + tile cleaner",
+        "maintenance_level": "Very Low"
+      },
+
+      "price": {
+        "currency": "BDT",
+        "min_per_sqft": 120,
+        "max_per_sqft": 350
+      },
+
+      "rating": 4.6,
+      "brand_examples": ["RAK Ceramics", "Akij Ceramics", "X Ceramics"]
+    },
+
+    {
+      "id": 3,
+      "name": "Vitrified Tile",
+      "slug": "vitrified-tile",
+      "category": "Floor",
+      "origin": "Clay + silica + quartz",
+       "image": "https://xceramics.com/wp-content/uploads/2021/12/XOD-352-300x300.png",
+      "description": "Vitrified tiles খুবই শক্ত এবং কম porous হওয়ায় stain resistant ও long-lasting।",
+
+      "technical_specs": {
+        "water_absorption": "< 1%",
+        "thickness_mm": [8, 10],
+        "weight_per_box_kg": 20,
+        "pcs_per_box": 2,
+        "coverage_per_box_sqft": 16
+      },
+
+      "features": [
+        "Very strong",
+        "Glossy finish",
+        "Low maintenance",
+        "Stain resistant"
+      ],
+
+      "advantages": [
+        "Showroom look দেয়",
+        "দীর্ঘস্থায়ী",
+        "কম পানি শোষণ করে"
+      ],
+
+      "disadvantages": [
+        "Slip হতে পারে (Glossy হলে)",
+        "দাম মাঝারি থেকে বেশি"
+      ],
+
+      "available_sizes": [
+        { "label": "24x24 inch", "cm": "60x60" },
+        { "label": "32x32 inch", "cm": "80x80" }
+      ],
+
+      "surface_finish": [
+        "Glossy",
+        "Double Charged",
+        "Nano Polished"
+      ],
+
+      "color_options": [
+        "White Glossy",
+        "Beige",
+        "Marble Finish",
+        "Granite Look"
+      ],
+
+      "applications": [
+        "Living Room",
+        "Office",
+        "Showroom",
+        "Hotel Lobby"
+      ],
+
+      "performance": {
+        "durability": "High",
+        "scratch_resistance": "High",
+        "slip_resistance_rating": "R9",
+        "stain_resistance": "Excellent"
+      },
+
+      "maintenance": {
+        "cleaning_method": "Dry mop + cleaner",
+        "maintenance_level": "Low"
+      },
+
+      "price": {
+        "currency": "BDT",
+        "min_per_sqft": 100,
+        "max_per_sqft": 280
+      },
+
+      "rating": 4.5,
+      "brand_examples": ["DBL Ceramics", "Fu-Wang", "Mir Ceramics"]
+    },
+
+    {
+      "id": 4,
+      "name": "Marble Tile",
+      "slug": "marble-tile",
+      "category": "Premium Floor",
+      "origin": "Natural stone",
+       "image": "https://xceramics.com/wp-content/uploads/2021/12/XOD-355-300x300.png",
+      "description": "Marble tiles প্রাকৃতিক পাথর থেকে তৈরি এবং premium luxury look দেয়।",
+
+      "technical_specs": {
+        "water_absorption": "0.1% - 0.5%",
+        "thickness_mm": [15, 18],
+        "weight_per_sqft_kg": 5
+      },
+
+      "features": [
+        "Natural beauty",
+        "Luxury look",
+        "Unique patterns"
+      ],
+
+      "advantages": [
+        "প্রিমিয়াম ফিনিশ",
+        "দামি ও আকর্ষণীয়",
+        "উচ্চমানের"
+      ],
+
+      "disadvantages": [
+        "Regular maintenance দরকার",
+        "Stain হতে পারে",
+        "দাম বেশি"
+      ],
+
+      "available_sizes": [
+        { "label": "Custom Cut", "cm": "Custom" }
+      ],
+
+      "surface_finish": ["Polished", "Honed"],
+
+      "color_options": [
+        "White Marble",
+        "Black Marble",
+        "Green Marble",
+        "Italian Marble"
+      ],
+
+      "applications": [
+        "Luxury Home",
+        "Hotel",
+        "Lobby",
+        "Staircase"
+      ],
+
+      "performance": {
+        "durability": "Medium-High",
+        "scratch_resistance": "Medium",
+        "slip_resistance_rating": "R8",
+        "stain_resistance": "Medium"
+      },
+
+      "maintenance": {
+        "cleaning_method": "Special marble cleaner",
+        "maintenance_level": "High"
+      },
+
+      "price": {
+        "currency": "BDT",
+        "min_per_sqft": 250,
+        "max_per_sqft": 1000
+      },
+
+      "rating": 4.7,
+      "brand_examples": ["Imported Italy", "Local Stone Suppliers"]
+    },
+  {
+    "id": 5,
+    "name": "Granite Tile",
+    "slug": "granite-tile",
+    "category": "Premium Floor",
+    "origin": "Natural stone",
+     "image": "https://xceramics.com/wp-content/uploads/2021/12/XOD-356-300x300.png",
+    "description": "Granite tiles অত্যন্ত শক্ত এবং heavy-duty ব্যবহারের জন্য উপযুক্ত।",
+
+    "technical_specs": {
+      "water_absorption": "< 0.3%",
+      "thickness_mm": [15, 20],
+      "weight_per_sqft_kg": 6
+    },
+
+    "features": [
+      "Extremely durable",
+      "Heat resistant",
+      "Scratch resistant"
+    ],
+
+    "advantages": [
+      "খুবই শক্ত",
+      "Outdoor use এর জন্য ভালো",
+      "Heavy traffic সহ্য করতে পারে"
+    ],
+
+    "disadvantages": [
+      "দাম বেশি",
+      "ইনস্টলেশন কঠিন"
+    ],
+
+    "available_sizes": [
+      { "label": "Custom Cut", "cm": "Custom" }
+    ],
+
+    "surface_finish": ["Polished", "Flamed"],
+
+    "color_options": ["Black", "Gray", "Red Granite"],
+
+    "applications": [
+      "Outdoor",
+      "Parking Area",
+      "Commercial Building"
+    ],
+
+    "performance": {
+      "durability": "Very High",
+      "scratch_resistance": "Very High",
+      "slip_resistance_rating": "R11",
+      "stain_resistance": "Excellent"
+    },
+
+    "maintenance": {
+      "cleaning_method": "Water + stone cleaner",
+      "maintenance_level": "Low"
+    },
+
+    "price": {
+      "currency": "BDT",
+      "min_per_sqft": 300,
+      "max_per_sqft": 900
+    },
+
+    "rating": 4.6,
+    "brand_examples": ["Local Stone", "Imported Granite"]
+  },
+
+  {
+    "id": 6,
+    "name": "Mosaic Tile",
+    "slug": "mosaic-tile",
+    "category": "Decorative",
+    "origin": "Glass / Ceramic / Stone mix",
+     "image": "https://xceramics.com/wp-content/uploads/2025/07/XOD_360R-300x300.jpg",
+    "description": "Mosaic tiles ছোট ছোট টুকরো দিয়ে তৈরি decorative tile যা design highlight করতে ব্যবহৃত হয়।",
+
+    "technical_specs": {
+      "water_absorption": "Varies",
+      "thickness_mm": [4, 6]
+    },
+
+    "features": [
+      "Highly decorative",
+      "Water resistant",
+      "Flexible design"
+    ],
+
+    "advantages": [
+      "Design highlight করে",
+      "Bathroom ও kitchen এ সুন্দর লাগে"
+    ],
+
+    "disadvantages": [
+      "ইনস্টলেশন সময়সাপেক্ষ",
+      "গ্রাউট পরিষ্কার রাখা কঠিন"
+    ],
+
+    "available_sizes": [
+      { "label": "Sheet Form", "cm": "30x30" }
+    ],
+
+    "surface_finish": ["Glossy", "Matte"],
+
+    "color_options": ["Multi-color", "Blue", "Green", "Mixed"],
+
+    "applications": [
+      "Bathroom Wall",
+      "Kitchen Backsplash",
+      "Swimming Pool"
+    ],
+
+    "performance": {
+      "durability": "Medium",
+      "scratch_resistance": "Medium",
+      "slip_resistance_rating": "R10",
+      "stain_resistance": "Good"
+    },
+
+    "maintenance": {
+      "cleaning_method": "Soft brush + cleaner",
+      "maintenance_level": "Medium"
+    },
+
+    "price": {
+      "currency": "BDT",
+      "min_per_sqft": 150,
+      "max_per_sqft": 400
+    },
+
+    "rating": 4.4,
+    "brand_examples": ["RAK Ceramics", "China Mosaic"]
+  },
+
+  {
+    "id": 7,
+    "name": "Glass Tile",
+    "slug": "glass-tile",
+    "category": "Wall",
+    "origin": "Glass",
+     "image": "https://xceramics.com/wp-content/uploads/2025/07/XOD_362-300x300.jpg",
+    "description": "Glass tiles চকচকে ও reflective হওয়ায় modern look দেয়।",
+
+    "technical_specs": {
+      "water_absorption": "0%",
+      "thickness_mm": [4, 8]
+    },
+
+    "features": [
+      "Reflective surface",
+      "Waterproof",
+      "Modern design"
+    ],
+
+    "advantages": [
+      "Stylish look",
+      "Light reflect করে"
+    ],
+
+    "disadvantages": [
+      "Scratch হতে পারে",
+      "দাম বেশি"
+    ],
+
+    "available_sizes": [
+      { "label": "Small Panels", "cm": "30x30" }
+    ],
+
+    "surface_finish": ["Glossy"],
+
+    "color_options": ["Blue", "White", "Transparent"],
+
+    "applications": [
+      "Kitchen",
+      "Bathroom Wall",
+      "Decoration"
+    ],
+
+    "performance": {
+      "durability": "Medium",
+      "scratch_resistance": "Low",
+      "slip_resistance_rating": "R9",
+      "stain_resistance": "Excellent"
+    },
+
+    "maintenance": {
+      "cleaning_method": "Glass cleaner",
+      "maintenance_level": "Low"
+    },
+
+    "price": {
+      "currency": "BDT",
+      "min_per_sqft": 200,
+      "max_per_sqft": 500
+    },
+
+    "rating": 4.3,
+    "brand_examples": ["Imported Glass Tile"]
+  },
+
+  {
+    "id": 8,
+    "name": "Cement Tile",
+    "slug": "cement-tile",
+    "category": "Decorative Floor",
+    "origin": "Cement",
+     "image": "https://xceramics.com/wp-content/uploads/2025/07/XOD_362-300x300.jpg",
+    "description": "Cement tiles handmade হয় এবং vintage look দেয়।",
+
+    "technical_specs": {
+      "water_absorption": "High",
+      "thickness_mm": [12, 16]
+    },
+
+    "features": [
+      "Handmade design",
+      "Vintage look",
+      "Custom pattern"
+    ],
+
+    "advantages": [
+      "Unique design",
+      "Artistic feel"
+    ],
+
+    "disadvantages": [
+      "Seal করতে হয়",
+      "Maintenance বেশি"
+    ],
+
+    "available_sizes": [
+      { "label": "8x8 inch", "cm": "20x20" }
+    ],
+
+    "surface_finish": ["Matte"],
+
+    "color_options": ["Patterned", "Vintage colors"],
+
+    "applications": [
+      "Restaurant",
+      "Feature Floor",
+      "Interior Design"
+    ],
+
+    "performance": {
+      "durability": "Medium",
+      "scratch_resistance": "Medium",
+      "slip_resistance_rating": "R10",
+      "stain_resistance": "Low"
+    },
+
+    "maintenance": {
+      "cleaning_method": "Seal + gentle cleaning",
+      "maintenance_level": "High"
+    },
+
+    "price": {
+      "currency": "BDT",
+      "min_per_sqft": 180,
+      "max_per_sqft": 450
+    },
+
+    "rating": 4.2,
+    "brand_examples": ["Local Handmade"]
+  },
+
+  {
+    "id": 9,
+    "name": "Terrazzo Tile",
+    "slug": "terrazzo-tile",
+    "category": "Floor",
+    "origin": "Marble chips + cement",
+     "image": "https://xceramics.com/wp-content/uploads/2025/07/XOD_361Y-300x300.jpg",
+    "description": "Terrazzo tiles marble chips দিয়ে তৈরি এবং খুবই টেকসই।",
+
+    "technical_specs": {
+      "water_absorption": "< 1%",
+      "thickness_mm": [12, 20]
+    },
+
+    "features": [
+      "Long lasting",
+      "Unique texture",
+      "Eco-friendly"
+    ],
+
+    "advantages": [
+      "দীর্ঘস্থায়ী",
+      "কম maintenance"
+    ],
+
+    "disadvantages": [
+      "ভারী",
+      "ইনস্টলেশন কঠিন"
+    ],
+
+    "available_sizes": [
+      { "label": "24x24 inch", "cm": "60x60" }
+    ],
+
+    "surface_finish": ["Polished", "Matte"],
+
+    "color_options": ["Speckled", "Gray", "White"],
+
+    "applications": [
+      "Office",
+      "School",
+      "Public Area"
+    ],
+
+    "performance": {
+      "durability": "High",
+      "scratch_resistance": "High",
+      "slip_resistance_rating": "R10",
+      "stain_resistance": "Good"
+    },
+
+    "maintenance": {
+      "cleaning_method": "Mop + cleaner",
+      "maintenance_level": "Low"
+    },
+
+    "price": {
+      "currency": "BDT",
+      "min_per_sqft": 120,
+      "max_per_sqft": 300
+    },
+
+    "rating": 4.5,
+    "brand_examples": ["Local Terrazzo"]
+  },
+
+  {
+    "id": 10,
+    "name": "Wood Look Tile",
+    "slug": "wood-look-tile",
+    "category": "Floor",
+     "image": "https://xceramics.com/wp-content/uploads/2025/07/XOD_363-300x300.jpg",
+    "origin": "Porcelain",
+    "description": "Wood look tiles কাঠের মতো দেখতে কিন্তু টাইলসের সুবিধা দেয়।",
+
+    "technical_specs": {
+      "water_absorption": "< 0.5%",
+      "thickness_mm": [8, 10]
+    },
+
+    "features": [
+      "Wood appearance",
+      "Water resistant",
+      "Durable"
+    ],
+
+    "advantages": [
+      "Wood look + tile durability",
+      "Maintenance কম"
+    ],
+
+    "disadvantages": [
+      "Real wood feel কম"
+    ],
+
+    "available_sizes": [
+      { "label": "6x36 inch", "cm": "15x90" }
+    ],
+
+    "surface_finish": ["Matte", "Textured"],
+
+    "color_options": ["Oak", "Walnut", "Teak"],
+
+    "applications": [
+      "Bedroom",
+      "Living Room",
+      "Office"
+    ],
+
+    "performance": {
+      "durability": "High",
+      "scratch_resistance": "High",
+      "slip_resistance_rating": "R10",
+      "stain_resistance": "Excellent"
+    },
+
+    "maintenance": {
+      "cleaning_method": "Dry mop",
+      "maintenance_level": "Low"
+    },
+
+    "price": {
+      "currency": "BDT",
+      "min_per_sqft": 140,
+      "max_per_sqft": 320
+    },
+
+    "rating": 4.6,
+    "brand_examples": ["RAK Ceramics", "DBL"]
+  }
+  ]
+  
+}
