@@ -20,7 +20,7 @@ export default function NavbarMain() {
             href="/main"
             className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent"
           >
-            TilesGallery
+           TileMaster
           </Link>
         </div>
 

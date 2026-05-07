@@ -73,7 +73,7 @@ export default function ProductMarquee() {
       <Marquee
         direction="right"
         speed={200}
-        pauseOnHover
+       
         gradient={false}
       >
         {row1.map((item) => (
@@ -85,7 +85,7 @@ export default function ProductMarquee() {
       <Marquee
         direction="left"
         speed={300}
-        pauseOnHover
+       
         gradient={false}
       >
         {row2.map((item) => (
