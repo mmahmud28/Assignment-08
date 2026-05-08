@@ -3,6 +3,11 @@
 import Link from "next/link";
 
 export default function RegisterPage() {
+
+  const onSubmit = async (e) => {
+    const name = e.target.name.value;
+  }
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4">
 
