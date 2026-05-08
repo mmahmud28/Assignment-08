@@ -1,10 +1,58 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import toast, { Toaster } from "react-hot-toast";
 
 const LoginPage = () => {
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const toastId = toast.loading("Logging in...");
+
+    try {
+
+      const { data, error } = await authClient.signIn.email({
+        email,
+        password,
+        callbackURL:"/main"
+      });
+
+      if (error) {
+
+        toast.error(error.message || "Login failed", {
+          id: toastId,
+        });
+
+        return;
+      }
+
+      toast.success("Login successful 🎉", {
+        id: toastId,
+      });
+
+      console.log(data);
+
+    } catch (err) {
+
+      console.log(err);
+
+      toast.error("Something went wrong!", {
+        id: toastId,
+      });
+
+    }
+  };
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4">
+
+      {/* TOASTER */}
+      <Toaster position="top-right" />
 
       {/* Card */}
       <div className="w-full max-w-md p-8 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
@@ -15,18 +63,22 @@ const LoginPage = () => {
         </h1>
 
         {/* Form */}
-        <form className="space-y-4">
+        <form onSubmit={onSubmit} className="space-y-4">
 
           <input
+            name="email"
             type="email"
             placeholder="Email Address"
-            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            required
+            className="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-orange-500"
           />
 
           <input
+            name="password"
             type="password"
             placeholder="Password"
-            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            required
+            className="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-orange-500"
           />
 
           <div className="text-right text-sm">
@@ -35,9 +87,13 @@ const LoginPage = () => {
             </a>
           </div>
 
-          <button className="btn w-full bg-orange-500 hover:bg-orange-600 border-none text-white">
+          <button
+            type="submit"
+            className="w-full py-2 rounded-lg bg-orange-500 hover:bg-orange-600 border-none text-white font-semibold"
+          >
             Login
           </button>
+
         </form>
 
         {/* Divider */}
@@ -48,7 +104,7 @@ const LoginPage = () => {
         </div>
 
         {/* Google */}
-        <button className="btn w-full bg-white text-gray-700 hover:bg-gray-100 flex items-center justify-center gap-2">
+        <button className="w-full py-2 rounded-lg bg-white text-gray-700 hover:bg-gray-100 flex items-center justify-center gap-2 font-medium transition">
           <img
             src="https://www.svgrepo.com/show/475656/google-color.svg"
             alt="google"
@@ -60,7 +116,10 @@ const LoginPage = () => {
         {/* Register */}
         <p className="text-sm mt-6 text-center text-gray-300">
           Don’t have an account?{" "}
-          <Link href="/auth/register" className="text-orange-400 hover:underline">
+          <Link
+            href="/auth/register"
+            className="text-orange-400 hover:underline"
+          >
             Register
           </Link>
         </p>
