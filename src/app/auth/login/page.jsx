@@ -20,12 +20,14 @@ const LoginPage = () => {
         email,
         password,
         callbackURL:"/main"
+
       });
 
       if (error) {
 
         toast.error(error.message || "Login failed", {
           id: toastId,
+          
         });
 
         return;
