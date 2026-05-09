@@ -1,11 +1,25 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function NavbarMain() {
 
   const pathname = usePathname();
+
+  const logOut = async () => {
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/login");
+        },
+      },
+    });
+  };
+
+  const userData = authClient.useSession();
+  const userdata = userData?.data?.user;
 
   const user = true;
 
@@ -21,6 +35,7 @@ export default function NavbarMain() {
     {
       name: "Logout",
       path: "/",
+      onClick: logOut
     },
   ];
 
@@ -56,11 +71,10 @@ export default function NavbarMain() {
                   href={item.path}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300
                   
-                  ${
-                    active
+                  ${active
                       ? "bg-orange-500 text-white shadow-md"
                       : "text-gray-200 hover:bg-white/10 hover:text-white"
-                  }
+                    }
                   
                   `}
                 >
@@ -82,7 +96,7 @@ export default function NavbarMain() {
               <div className="w-10 rounded-full ring ring-orange-400 ring-offset-2 ring-offset-slate-900 overflow-hidden">
 
                 <img
-                  src="https://i.pravatar.cc/150"
+                  src={userdata?.image || "/default-user.png"}
                   alt="user"
                 />
 

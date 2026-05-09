@@ -1,8 +1,17 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import React, { useState } from "react";
+import { Image } from "next/image";
 
 const ProfilePage = () => {
+
+
+    const userData = authClient.useSession();    
+   const userdata = userData?.data?.user;
+    
+
+
     const [activeTab, setActiveTab] = useState("overview");
 
     // Tiles Buyer User Data
@@ -153,7 +162,7 @@ const ProfilePage = () => {
             <div className="relative h-80 lg:h-96 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
                 <img
-                    src={user.cover_photo}
+                    src={userdata?.image}
                     alt="cover"
                     className="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000"
                 />
@@ -164,10 +173,10 @@ const ProfilePage = () => {
                 {/* Avatar */}
                 <div className="absolute -bottom-16 left-6 md:left-10 z-30">
                     <div className="relative">
-                        <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-white">
+                        <div className="w-28 mb-18 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-white">
                             <img
-                                src={user.avatar}
-                                alt={user.full_name}
+                                src={userdata?.image}
+                                alt={userdata?.name}
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -183,7 +192,7 @@ const ProfilePage = () => {
                         <div className="flex-1">
                             <div className="flex items-center gap-3 mb-2 flex-wrap">
                                 <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                                    {user.full_name}
+                                    {userdata?.name}
                                 </h1>
                                 {user.is_verified && (
                                     <span className="inline-flex items-center gap-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs px-2.5 py-1 rounded-full shadow-md">
@@ -201,14 +210,14 @@ const ProfilePage = () => {
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                 </svg>
-                                <span className="text-sm">@{user.username}</span>
+                                <span className="text-sm">@{userdata?.name}</span>
                             </div>
                             <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                                 <div className="flex items-center gap-1">
                                     <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                    {user.email}
+                                    {userdata?.email}
                                 </div>
                                 <div className="flex items-center gap-1">
                                     <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
