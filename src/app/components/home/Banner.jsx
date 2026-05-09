@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-  "https://images.unsplash.com/photo-1523217582562-09d0def993a6",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-  "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+  "https://www.hansetile.com/uploads/201916238/porcelain-tile-flooring-gallery09359958091.jpg",
+  "https://haisdisplay.com/cdn/shop/products/bhgf_faf90bdd-3240-4fca-a623-bb950cfe83f0.jpg",
+  "https://haisdisplay.com/cdn/shop/products/gryr_53de7bec-4e1e-4046-8845-ee58ff62b6c4.jpg",
+  "https://haisdisplay.com/cdn/shop/products/gyr.jpg",
 ];
 
 const titles = [
