@@ -48,6 +48,13 @@ const LoginPage = () => {
     }
   };
 
+ const handelgooglelogin = async () => {
+  await authClient.signIn.social({
+    provider: "google",
+    callbackURL: "/main",
+  });
+};
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4">
 
@@ -88,6 +95,7 @@ const LoginPage = () => {
           </div>
 
           <button
+         
             type="submit"
             className="w-full py-2 rounded-lg bg-orange-500 hover:bg-orange-600 border-none text-white font-semibold"
           >
@@ -104,7 +112,7 @@ const LoginPage = () => {
         </div>
 
         {/* Google */}
-        <button className="w-full py-2 rounded-lg bg-white text-gray-700 hover:bg-gray-100 flex items-center justify-center gap-2 font-medium transition">
+        <button  onClick={handelgooglelogin} className="w-full py-2 rounded-lg bg-white text-gray-700 hover:bg-gray-100 flex items-center justify-center gap-2 font-medium transition">
           <img
             src="https://www.svgrepo.com/show/475656/google-color.svg"
             alt="google"

@@ -56,6 +56,13 @@ export default function RegisterPage() {
 
   };
 
+ const handelgooglelogin = async () => {
+  await authClient.signIn.social({
+    provider: "google",
+    callbackURL: "/main",
+  });
+};
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4">
 
@@ -121,7 +128,7 @@ export default function RegisterPage() {
         </div>
 
         {/* Google Button */}
-        <button className="w-full py-2 rounded-lg bg-white text-gray-700 font-medium flex items-center justify-center gap-2 hover:bg-gray-100 transition">
+        <button onClick={handelgooglelogin} className="w-full py-2 rounded-lg bg-white text-gray-700 font-medium flex items-center justify-center gap-2 hover:bg-gray-100 transition">
           <img
             src="https://www.svgrepo.com/show/475656/google-color.svg"
             alt="google"
